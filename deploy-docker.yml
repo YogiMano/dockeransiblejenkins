@@ -21,8 +21,8 @@
         state: present
     - name: Start the container
       docker_container:
-        name: sampleimage
-        image: "yogimano/sampleimage:{{DOCKER_TAG}}"
+        name: imagenow
+        image: "yogimano/imagenow:{{Docker_Version}}"
         state: started
         published_ports:
           - 0.0.0.0:8080:8080
